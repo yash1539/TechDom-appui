@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHDOMSOLUTIONS</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Monoton&display=swap" rel="stylesheet">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <style>
+        /* Your additional styling here */
+    </style>
+</head>
+<body>
+    <canvas class="webgl"></canvas>
+    <section class="section">
+        <div id="modalbox">
+            <img src="./assets/giroscope.gif" alt="PopUp" class="img">
+            <p class="popup-text">If you are on smartphone turn on the gyroscope</p>
+            <button type="button" class="accept-btn" onclick="closeModal()">OK</button>
+        </div>
+    </section>
+    <section class="section">
+        <h1 class="center-Text">Elevating Excellence Across All Domains: Your Partner in Comprehensive Technical Solutions</h1>
+    </section>
+    <section class="section">
+        <h2 class="left-Text">Technology Stack and Frameworks</h2>
+        <table className="table-text">
+            <thead>
+                <tr>
+                    <th>Domain</th>
+                    <th>Technology Stack</th>
+                    <th>JavaScript Frameworks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Development</td>
+                    <td>HTML, CSS, JavaScript</td>
+                    <td>React, Angular, Vue.js, Next.js, Three.js</td>
+                </tr>
+                <tr>
+                    <td>Mobile Development</td>
+                    <td>Swift, Kotlin</td>
+                    <td>React Native, Flutter</td>
+                </tr>
+                <!-- Add more rows for different domains and frameworks -->
+            </tbody>
+        </table>
+    </section>
+    <section class="section">
+        <h2 class="right-Text">Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="./assets/product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac quam vel justo iaculis euismod.</p>
+            </div>
+            <div class="product">
+                <img src="./assets/product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Nullam nec fringilla quam. Vivamus euismod felis nec quam suscipit commodo.</p>
+            </div>
+            <!-- Add more product sections as needed -->
+        </div>
+    </section>
+    <section class="section">
+        <h2 class="right-Text">CLICK THE BRIEFCASE!</h2>
+        <div class="contact">
+            <div class="footer socials">
+                <a href="https://www.linkedin.com/in/diego-alejandro-cascavita-poveda-890524124/" class="footer__social" target="_blank">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+                <a href="https://diego-cascavita.netlify.app" class="footer__social" target="_blank"><!--LINK PORTFOLIO THREE.JS-->
+                    <i class="uil uil-bag"></i>
+                </a>
+                <a href="https://github.com/DiegoCascavita" class="footer__social" target="_blank">
+                    <i class="uil uil-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script>
+        let modalBox = document.getElementById('modalbox');
+        function closeModal() {
+            modalBox.style.display = "none";
+        }
+    </script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
